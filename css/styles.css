@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
+  border-bottom: 1px solid #eee;
+}
+
+p {
+  margin-top: 16px;
+}
