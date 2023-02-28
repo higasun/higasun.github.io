@@ -178,7 +178,7 @@
   const width = 128;
   const height = 128;
   const identiconDivs = document.querySelectorAll('.identicon');
-  const identiconGenerator = new IdenticonGenerator(N, size, 4);
+  const identiconGenerator = new IdenticonGenerator(N, size, 6);
   const renderer = new IdenticonRenderer(size, width, height, identiconDivs);
   const restart = document.getElementById('restart');
   let selectedIdenticonIdxes = [];
