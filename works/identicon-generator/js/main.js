@@ -9,9 +9,8 @@
 
       this.canvas = document.createElement('canvas');
       this.context = this.canvas.getContext('2d');
-      this.drawHighResolution();
-      // this.canvas.width = width;
-      // this.canvas.height = height;
+      this.canvas.width = width;
+      this.canvas.height = height;
       this.divs = divs;
   
       this.manipulater = new ArrayManipulator(this.size, this.height, this.width);
@@ -36,20 +35,6 @@
           this.divs[idx].appendChild(img);
         }, 'image/png');
       })
-    }
-
-    drawHighResolution() {
-      // 高解像度のディスプレイに対応させる
-      // 一度大きな領域に描画して縮小してから表示することで高解像度ディスプレイに対応
-      const dpr = window.devicePixelRatio || 1; // "|| 1"の部分はwindow.devicePixelRatioが取得できなかったときは1とする
-      console.log(dpr);
-      this.canvas.width = this.width * dpr;
-      this.canvas.height = this.height * dpr;
-      this.context.scale(dpr, dpr);
-  
-      // canvasのstyle指定で縮小させる
-      this.canvas.style.width = this.width + 'px';
-      this.canvas.style.height = this.height + 'px';
     }
   }
   
