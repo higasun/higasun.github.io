@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background: #ddd;
+  width: calc(128px * 5 + 40px * 4);
+  margin: 32px auto 0;
+  padding: 32px 0;
+  border-radius: 32px;
+  padding: 32px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 32px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+  margin-top: 48px;
+  widows: 100%;
+}
+
+main .row {
+  height: 128px;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+main .row + .row {
+  margin-top: 40px;
+}
+
+.identicon {
+  width: 128px;
+  height: 128px;
+  background: skyblue;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.identicon:hover {
+  opacity: .8;
+}
+
+.identicon.selected {
+  outline: 4px solid rgb(94, 217, 94);
+}
+
+.controller {
+  width: calc(240px * 3 + 32px * 2);
+  margin: 48px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  all: unset;
+  margin: 0;
+  width: 240px;
+  text-align: center;
+  font-size: 18px;
+  padding: 16px 0;
+  background: rgb(94, 217, 94);
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 12px;
+  transition: opacity .2s;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+button:active {
+  opacity: .5;
+}
+
+#download {
+  background: #2cb1de;
+}
+
+#restart {
+  background: #6f6f6f;
+}
